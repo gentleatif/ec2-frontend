@@ -1,0 +1,10 @@
+.error {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  color: red;
+}
+
+.userInput {
+  width: 97% !important;
+}

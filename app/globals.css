@@ -1,27 +1,153 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* General Reset */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fce3ec, #f9b4ed);
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #ffe7f8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  color: #e91e63;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Form Styling */
+.user-form {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.user-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.user-form button {
+  background: linear-gradient(135deg, #f50057, #ff4081);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-form button:hover {
+  background: linear-gradient(135deg, #d50046, #e7376c);
+}
+
+/* User List Styling */
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #ffe6f0, #f4d4e3);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.user-details {
+  flex: 1;
+}
+
+.user-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #e91e63;
+}
+
+.user-details p {
+  margin: 5px 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Buttons Styling */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-button,
+.upload-button {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background: linear-gradient(135deg, #e05555, #e37777);
+}
+
+.upload-button {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+}
+
+.upload-button:hover {
+  background: linear-gradient(135deg, #43a047, #57a857);
+}
+
+.upload-input {
+  display: none;
+}
+
+.upload-label {
+  background: linear-gradient(135deg, #2196f3, #64b5f6);
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
 }
