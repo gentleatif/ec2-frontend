@@ -10,8 +10,7 @@ interface User {
 }
 
 const UserPage = () => {
-  const url =
-    "http://ec2-13-233-246-112.ap-south-1.compute.amazonaws.com:3001/user";
+  const url = "https://user-ec2-nest.onrender.com/user";
 
   // const url = "http://localhost:3001/user";
   const [users, setUsers] = useState<User[]>([]);
