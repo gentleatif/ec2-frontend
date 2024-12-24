@@ -67,6 +67,13 @@ const UserPage = () => {
 
   return (
     <div className="container">
+      <a
+        href="https://thread-chive-19b.notion.site/EC2-Deployment-and-Domain-Name-1666f264b34980828889f9210992a052"
+        type="submit"
+        className="submitbtn"
+      >
+        Documentation
+      </a>
       <AddUserForm onUserAdded={fetchUsers} /> {/* Add the form here */}
       <h1>User List</h1>
       <ul className="user-list">

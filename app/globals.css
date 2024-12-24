@@ -151,3 +151,19 @@ h1 {
 .upload-label:hover {
   background: linear-gradient(135deg, #1976d2, #42a5f5);
 }
+
+.submitbtn {
+  background: linear-gradient(135deg, #f50057, #ff4081);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  text-decoration: none;
+}
